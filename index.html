@@ -24,8 +24,7 @@
     <li><a href='pages/sobrenosotros.html'>Sobre Nosotros</a></li>
     <li><a href='pages/contacto.html'>Contacto</a></li>
 </ul>
-
-                  </nav>
+</nav>
   </nav> 
 </header>
     <!-- END HEADER -->
@@ -40,8 +39,27 @@
               <h1>Concesionaria CFMoto</h1>
               <p>Concesionaria de motos CFMoto en la ciudad de Buenos Aires</p>
           </div>
-          <div class="welcome-image">
-            <img src="imagenes/CFMOTO-675-SR-R-fiche-1.jpeg" alt="Motos CFMoto en exhibición">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagenes/CFMOTO-675-SR-R-fiche-1.jpeg" class="d-block w-100" alt="Cfmoto 675 SR">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/MODERN-TECHNOLOGY-INTEGRATED-1.png" class="d-block w-100" alt="CLX 300 CFMOTO">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/cfmoto_450_mt_id3334_6.jpeg" class="d-block w-100" alt="CFMOTO 450 MT">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
       </div>
   </section>
   
@@ -71,6 +89,7 @@
           <h3>CFMoto</h3>
           <p>Modelo: CLX 300</p>
           <p>Segmento: Street</p>
+          <button type="button" class="btn btn-success">Cotizar</button>
       </div>
   </div>
   <div class="moto-item">
@@ -79,6 +98,7 @@
           <h3>CFMoto</h3>
           <p>Modelo: 450 MT</p>
           <p>Segmento: Touring</p>
+          <button type="button" class="btn btn-success">Cotizar</button>
       </div>
   </div>
   <div class="moto-item">
@@ -87,6 +107,7 @@
           <h3>CFMoto</h3>
           <p>Modelo: 300SR</p>
           <p>Segmento: Racing</p>
+          <button type="button" class="btn btn-success">Cotizar</button>
       </div>
   </div>
 </section>

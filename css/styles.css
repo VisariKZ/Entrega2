@@ -77,8 +77,9 @@ body {
   
     .nav-list a {
       display: block;
-      font-size: 1.3rem;
-      padding: 1.0rem;
+      font-size: 1.2rem;
+      padding: 0.8rem;
+      margin-top: 10px;
     }
   
     .nav-list a:hover {
@@ -140,6 +141,18 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
+.carousel-inner {
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  width: 700px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
 
 .catalogo {
   background-color: #9a93ff;
@@ -471,129 +484,126 @@ form input[type="submit"]:hover {
     margin: 0.3rem 0;
 }
 
-/* Media Queries para pantallas más pequeñas */
 
-/* Pantallas grandes (hasta 1200px) */
 @media (max-width: 1200px) {
   .motos-grid {
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .nav-list a {
-    font-size: 1.1rem; /* Tamaño de fuente reducido */
+    font-size: 1.1rem;
   }
 
   .welcome-text h1 {
-    font-size: 4rem; /* Tamaño de encabezado reducido */
+    font-size: 4rem;
   }
 
   .welcome-text p {
-    font-size: 1.5rem; /* Tamaño de párrafo reducido */
+    font-size: 1.5rem;
   }
 }
 
-/* Pantallas medianas (hasta 768px) */
 @media (max-width: 768px) {
   .motos-grid {
-    grid-template-columns: 1fr; /* Una sola columna */
+    grid-template-columns: 1fr;
   }
 
   .nav {
-    flex-direction: column; /* Navegación en columna */
-    align-items: flex-start; /* Alinear a la izquierda */
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .nav img {
-    margin-right: 0; /* Eliminar margen derecho */
-    margin-bottom: 10px; /* Espacio entre logo y menú */
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 
   .nav-list {
-    margin-right: 0; /* Eliminar margen derecho */
+    margin-right: 0;
   }
 
   .nav-list a {
-    font-size: 0.8rem; /* Tamaño de fuente reducido */
-    padding: 0.2rem; /* Reducir padding */
+    font-size: 0.8rem;
+    padding: 0.2rem;
   }
 
   .welcome-text h1 {
-    font-size: 3rem; /* Tamaño de encabezado reducido */
+    font-size: 3rem;
   }
 
   .welcome-text p {
-    font-size: 1.2rem; /* Tamaño de párrafo reducido */
+    font-size: 1.2rem;
   }
 
   .catalogo h2 {
-    font-size: 2.5rem; /* Tamaño de encabezado reducido */
+    font-size: 2.5rem;
   }
 
   .catalogo p {
-    font-size: 1.2rem; /* Tamaño de párrafo reducido */
+    font-size: 1.2rem;
   }
 
   .servicios-list {
-    grid-template-columns: 1fr; /* Una sola columna */
+    grid-template-columns: 1fr;
   }
 
   .footer-container {
-    flex-direction: column; /* Cambiar a columna */
-    align-items: center; /* Centrar elementos */
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer-logo {
-    margin-bottom: 0px; /* Espacio entre logo y otros elementos */
+    margin-bottom: 0px;
   }
 
   .footer-logo img {
     margin-left: 14px;
-    margin-bottom: 100px; /* Espacio entre logo y otros elementos */
+    margin-bottom: 100px;
   }
 
   .footer-links {
     margin-bottom: 40px;
-    align-items: center; /* Centrar elementos */
+    align-items: center;
   }
 }
 
-/* Pantallas pequeñas (hasta 480px) */
+
 @media (max-width: 480px) {
   .welcome-text h1 {
-    font-size: 2.5rem; /* Tamaño de encabezado reducido */
+    font-size: 2.5rem;
   }
 
   .welcome-text p {
-    font-size: 1rem; /* Tamaño de párrafo reducido */
+    font-size: 1rem;
   }
 
   .formulario h2 {
-    font-size: 2.5rem; /* Tamaño de encabezado reducido */
+    font-size: 2.5rem;
   }
 
   .formulario p {
-    font-size: 1rem; /* Tamaño de párrafo reducido */
+    font-size: 1rem;
   }
 
   .footer-links h3,
   .footer-contacto h3 {
-    font-size: 1rem; /* Tamaño de encabezado reducido */
+    font-size: 1rem;
   }
 
   .footer-links a,
   .footer-contacto p {
-    font-size: 0.9rem; /* Tamaño de texto reducido */
+    font-size: 0.9rem;
   }
 
   .moto-info h3 {
-    font-size: 1.5rem; /* Tamaño de encabezado reducido */
+    font-size: 1.5rem;
   }
 
   .moto-info p {
-    font-size: 1rem; /* Tamaño de párrafo reducido */
+    font-size: 1rem;
   }
 
   .banner img {
-    height: 250px; /* Ajustar altura de las imágenes del banner */
+    height: 250px;
   }
 }
