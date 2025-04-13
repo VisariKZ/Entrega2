@@ -1,0 +1,599 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* Estilo del Body */
+body {
+  font-family: sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: white;
+}
+  
+  h1,h2,h3,h4,h5,h6 {
+    font-family: sans-serif;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 6rem;
+  }
+  
+  h2 {
+    font-size: 4.2rem;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+  }
+  
+  nav .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0rem 2rem;
+    background: #0d1b2a;
+  }
+
+.nav img {
+  height: 40px;
+    width: auto;
+    margin-right: 47%;
+    display: flex;
+}
+
+  .nav-list {
+    display: flex;
+    margin-right: 2rem;
+  }
+  
+    .nav-list a {
+      display: block;
+      font-size: 1.3rem;
+      padding: 1.0rem;
+    }
+  
+    .nav-list a:hover {
+    background: #1b263b;
+  }
+
+  .welcome-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #1b263b, #19151d);
+  padding: 0 20px;
+  }
+
+  .welcome-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+  }
+  
+
+.welcome-text {
+  text-align: center;
+  color: white;
+}
+
+.welcome-text h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.welcome-text p {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Estilo para la imagen */
+.welcome-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-image img {
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+.catalogo {
+  background-color: #9a93ff;
+  padding: 60px 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.catalogo-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.catalogo h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.catalogo p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .catalogo h2 {
+    font-size: 2.5rem;
+  }
+
+  .catalogo p {
+    font-size: 1.2rem;
+  }
+}
+
+.banner {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.banner div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.banner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* SERVICIOS SECTION */
+.servicios {
+  background: #becaff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.servicios-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servicios h2 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.servicios p {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.servicios-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.servicios-list li {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #333;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.servicios-list li:hover {
+  background-color: #1b263b;
+  color: #fff;
+}
+
+/* SOBRE NOSOTROS SECTION */
+.sobre-nosotros {
+  background-color: #becaff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.sobre-nosotros-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sobre-nosotros h2 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.sobre-nosotros p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* FORMULARIO DE CONTACTO */
+.formulario {
+  background: linear-gradient(45deg, #1b263b, #19151d);
+  padding: 40px 20px;
+  color: white;
+}
+
+.formulario-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.formulario h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.formulario p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+}
+
+form label {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+form input, form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+
+form input[type="submit"] {
+  background-color: #1b263b;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #333;
+}
+
+.footer {
+  background-color: #1b263b;
+  color: #fff;
+  padding: 40px 20px 10px;
+  font-family: 'Arial', sans-serif;
+}
+
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+
+.footer-logo {
+  flex: 1 1 250px;
+  text-align: center;
+}
+
+.footer-logo img {
+  max-width: 75px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #ddd;
+  margin: -65px;
+}
+
+.footer-links,
+.footer-contacto {
+  flex: 1 1 200px;
+}
+
+.footer-links h3,
+.footer-contacto h3 {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #f8f9fa;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-contacto p {
+  margin: 6px 0;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.footer-contacto i {
+  margin-right: 8px;
+  color: #00d1b2;
+}
+
+.footer-redes {
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.footer-redes a {
+  margin-right: 10px;
+  color: #ddd;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.footer-redes a:hover {
+  color: #00d1b2;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 30px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Estilo del grid para las motos */
+.motos-grid {
+  background-color: #becaff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 50px;
+}
+
+.moto-item {
+  background-color: #9a93ff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.moto-item img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.moto-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.moto-info h3 {
+  color: black;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.moto-info p {
+    font-size: 1.2rem;
+    color: #000000;
+    margin: 0.3rem 0;
+}
+
+/* Media Queries para pantallas más pequeñas */
+
+/* Pantallas grandes (hasta 1200px) */
+@media (max-width: 1200px) {
+  .motos-grid {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+  }
+
+  .nav-list a {
+    font-size: 1.1rem; /* Tamaño de fuente reducido */
+  }
+
+  .welcome-text h1 {
+    font-size: 4rem; /* Tamaño de encabezado reducido */
+  }
+
+  .welcome-text p {
+    font-size: 1.5rem; /* Tamaño de párrafo reducido */
+  }
+}
+
+/* Pantallas medianas (hasta 768px) */
+@media (max-width: 768px) {
+  .motos-grid {
+    grid-template-columns: 1fr; /* Una sola columna */
+  }
+
+  .nav {
+    flex-direction: column; /* Navegación en columna */
+    align-items: flex-start; /* Alinear a la izquierda */
+  }
+
+  .nav img {
+    margin-right: 0; /* Eliminar margen derecho */
+    margin-bottom: 10px; /* Espacio entre logo y menú */
+  }
+
+  .nav-list {
+    margin-right: 0; /* Eliminar margen derecho */
+  }
+
+  .nav-list a {
+    font-size: 0.8rem; /* Tamaño de fuente reducido */
+    padding: 0.2rem; /* Reducir padding */
+  }
+
+  .welcome-text h1 {
+    font-size: 3rem; /* Tamaño de encabezado reducido */
+  }
+
+  .welcome-text p {
+    font-size: 1.2rem; /* Tamaño de párrafo reducido */
+  }
+
+  .catalogo h2 {
+    font-size: 2.5rem; /* Tamaño de encabezado reducido */
+  }
+
+  .catalogo p {
+    font-size: 1.2rem; /* Tamaño de párrafo reducido */
+  }
+
+  .servicios-list {
+    grid-template-columns: 1fr; /* Una sola columna */
+  }
+
+  .footer-container {
+    flex-direction: column; /* Cambiar a columna */
+    align-items: center; /* Centrar elementos */
+  }
+
+  .footer-logo {
+    margin-bottom: 0px; /* Espacio entre logo y otros elementos */
+  }
+
+  .footer-logo img {
+    margin-left: 14px;
+    margin-bottom: 100px; /* Espacio entre logo y otros elementos */
+  }
+
+  .footer-links {
+    margin-bottom: 40px;
+    align-items: center; /* Centrar elementos */
+  }
+}
+
+/* Pantallas pequeñas (hasta 480px) */
+@media (max-width: 480px) {
+  .welcome-text h1 {
+    font-size: 2.5rem; /* Tamaño de encabezado reducido */
+  }
+
+  .welcome-text p {
+    font-size: 1rem; /* Tamaño de párrafo reducido */
+  }
+
+  .formulario h2 {
+    font-size: 2.5rem; /* Tamaño de encabezado reducido */
+  }
+
+  .formulario p {
+    font-size: 1rem; /* Tamaño de párrafo reducido */
+  }
+
+  .footer-links h3,
+  .footer-contacto h3 {
+    font-size: 1rem; /* Tamaño de encabezado reducido */
+  }
+
+  .footer-links a,
+  .footer-contacto p {
+    font-size: 0.9rem; /* Tamaño de texto reducido */
+  }
+
+  .moto-info h3 {
+    font-size: 1.5rem; /* Tamaño de encabezado reducido */
+  }
+
+  .moto-info p {
+    font-size: 1rem; /* Tamaño de párrafo reducido */
+  }
+
+  .banner img {
+    height: 250px; /* Ajustar altura de las imágenes del banner */
+  }
+}
